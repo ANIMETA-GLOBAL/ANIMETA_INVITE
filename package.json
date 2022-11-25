@@ -1,0 +1,38 @@
+{
+  "name": "animeta_invite",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build ",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/node": "18.11.9",
+    "@types/react": "18.0.25",
+    "@types/react-dom": "18.0.9",
+    "axios": "^1.2.0",
+    "daisyui": "^2.41.0",
+    "eslint": "8.28.0",
+    "eslint-config-next": "13.0.4",
+    "net": "^1.0.2",
+    "next": "13.0.4",
+    "react": "18.2.0",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.0",
+    "react-simple-verify": "^1.0.11",
+    "react-slider-verify": "^0.2.1",
+    "react-tencent-captcha": "^2.0.4",
+    "tencent-captcha": "^1.0.2",
+    "tls": "^0.0.1",
+    "typescript": "4.9.3"
+  },
+  "devDependencies": {
+    "@types/react-copy-to-clipboard": "^5.0.4",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.19",
+    "tailwindcss": "^3.2.4"
+  }
+}
