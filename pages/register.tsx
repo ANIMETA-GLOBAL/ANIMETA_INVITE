@@ -85,7 +85,7 @@ export default function Rigister() {
   }
 
   const getInvitRank = () => {
-    axios.get(`http://192.168.31.60/index/inviting/get_rank`, {
+    axios.get(`http://${baseUrl}/index/inviting/get_rank`, {
     })
       .then(
         // 后台验证通过，返回用户信息
@@ -196,11 +196,11 @@ export default function Rigister() {
       <div className='tw-bg-black tw-w-screen  tw-min-h-screen tw-text-white'>
 
         <div className='tw-absolute tw-flex tw-w-full tw-justify-center tw-flex-row' >
-          <Image className='tw-animate-pulse tw-z-0 tw-mt-10' src={'/../public/img/text_bg_img.png'} width={500} height={500} alt="" style={{ animationDuration: "1.5s", animationDelay: "3s" }} />
+          <Image className='tw-animate-pulse tw-z-0 tw-mt-10' src={'./img/text_bg_img.png'} width={500} height={500} alt="" style={{ animationDuration: "1.5s", animationDelay: "3s" }} />
 
           {invitorMsg && <div className='tw-absolute tw-flex tw-flex-col tw-z-10'>
             <div className='lg:tw-w-[500px] tw-h-auto tw-mt-10 tw-flex tw-flex-row tw-items-center tw-space-x-2'>
-              <img className='tw-w-10 tw-h-10 tw-rounded-full tw-ring-2 tw-ring-white tw-ml-4' src={invitorMsg.avatar_url} />
+              <img className='tw-w-10 tw-h-10 tw-rounded-full tw-ring-2 tw-ring-white tw-ml-4' src={invitorMsg.avatar_url}  />
               <p className='tw-text-2xl '>{invitorMsg.nickname} 邀请您参与活动！</p>
             </div>
             <div className=' tw-text-2xl lg:tw-w-[500px] tw-h-[50px] tw-flex tw-flex-row tw-items-end'>
@@ -214,8 +214,8 @@ export default function Rigister() {
 
           <div className='tw-absolute tw-place-self-center tw-mt-[300px]'>
             <div className='motion-safe:tw-animate-bounce tw-flex tw-flex-col ' style={{ animationDuration: "1.5s" }} >
-              <Image className=' tw-place-self-center  tw-animate-ping tw-absolute' src={'/../public/img/box.png'} width={200} height={200} alt="" style={{ animationDuration: "1.5s", animationDelay: "0.75s" }} />
-              <Image className=' tw-place-self-center  tw-relative tw-z-1' src={'/../public/img/box.png'} width={200} height={200} alt="" />
+              <Image className=' tw-place-self-center  tw-animate-ping tw-absolute' src={'./img/box.png'} width={200} height={200} alt="" style={{ animationDuration: "1.5s", animationDelay: "0.75s" }} />
+              <Image className=' tw-place-self-center  tw-relative tw-z-1' src={'./img/box.png'} width={200} height={200} alt="" />
             </div>
 
             <div className=' tw-bg-gray-400/50 tw-rounded-lg'>
@@ -231,9 +231,9 @@ export default function Rigister() {
 
             <div className='tw-mt-10 tw-text-white tw-flex tw-justify-center'>
               <div className='tw-flex tw-flex-row '>
-                <Image className='tw-relative' src={'/../public/img/shell_icon.png'} width={20} height={20} alt="" />
+                <Image className='tw-relative' src={'./img/shell_icon.png'} width={20} height={20} alt="" />
                 <p>盲盒领取排行</p>
-                <Image className='tw-relative' src={'/../public/img/shell_icon.png'} width={20} height={20} alt="" />
+                <Image className='tw-relative' src={'./img/shell_icon.png'} width={20} height={20} alt="" />
               </div>
             </div>
 
@@ -242,7 +242,7 @@ export default function Rigister() {
                 <div key={index} className='tw-flex tw-flex-row tw-justify-between tw-items-center tw-space-x-1 '>
                   <div className='tw-flex tw-flex-row tw-space-x-3 tw-items-center '>
                     <p>{index + 1}</p>
-                    <Image className='tw-w-6 tw-h-6 tw-rounded-full tw-ring-1 tw-ring-white' src={item.avatar_url} alt=""  />
+                    <img className='tw-w-6 tw-h-6 tw-rounded-full tw-ring-1 tw-ring-white' src={item.avatar_url}  />
                     <div className='tw-flex tw-flex-col tw-text-sm'>
                       <p>{item.nickname}</p>
                     </div>

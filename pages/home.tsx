@@ -7,6 +7,7 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 import Router, { useRouter,withRouter } from "next/router";
 import toast, { Toaster } from 'react-hot-toast';
 
+
 export default function Home() {
   // axios.defaults.withCredentials = true;
   const baseUrl = "animeta.aucfan-cn.com"
@@ -82,11 +83,11 @@ export default function Home() {
             <div className='tw-flex tw-flex-col'>
               <div className={pageStyle.duration}>
                 <h2 >活动时间：12月10日-12月17日</h2>
-                <Image src={'/../public/img/invite_text.png'} alt='' width={300} height={300} />
+                <Image src={'./img/invite_text.png'} alt='' width={300} height={300} />
               </div>
               <div className='tw-place-self-center motion-safe:tw-animate-bounce ' style={{ animationDuration: "1.5s" }} >
-                <Image className=' tw-animate-ping tw-absolute' src={'/../public/img/box.png'} width={200} height={200} alt="" style={{ animationDuration: "1.5s", animationDelay: "0.75s" }} />
-                <Image className='tw-relative tw-z-1' src={'/../public/img/box.png'} width={200} height={200} alt="" />
+                <Image className=' tw-animate-ping tw-absolute' src='./img/box.png' width={200} height={200} alt="" style={{ animationDuration: "1.5s", animationDelay: "0.75s" }} />
+                <Image className='tw-relative tw-z-1' src={'./img/box.png'} width={200} height={200} alt="" />
               </div>
 
             </div>
@@ -100,14 +101,14 @@ export default function Home() {
               <CopyToClipboard text={`http://h5.animeta.aucfan-cn.com/register?uuid=${uuid}`}
                 onCopy={() => setCopied(true)}>
                 <button className="tw-z-20 tw-ds-btn tw-glass tw-ds-btn-info tw-text-white" onClick={()=>{toast.success('复制邀请链接成功!快去分享给好友吧~')}}>立即邀请
-                  <Image className='tw-relative' src={'/../public/img/link_icon.png'} width={20} height={20} alt="" />
+                  <Image className='tw-relative' src={'./img/link_icon.png'} width={20} height={20} alt="" />
                 </button>
               </CopyToClipboard>
 
             </div>
           </div>
           <div >
-            <Image className='tw-animate-pulse tw-z-0' src={'/../public/img/text_bg_img.png'} width={500} height={500} alt="" style={{ animationDuration: "1.5s", animationDelay: "3s" }} />
+            <Image className='tw-animate-pulse tw-z-0' src={'./img/text_bg_img.png'} width={500} height={500} alt="" style={{ animationDuration: "1.5s", animationDelay: "3s" }} />
           </div>
         </div>
 
@@ -138,9 +139,9 @@ export default function Home() {
 
         <div className='tw-mt-10 tw-text-white tw-flex tw-justify-center'>
           <div className='tw-flex tw-flex-row '>
-            <Image className='tw-relative' src={'/../public/img/shell_icon.png'} width={20} height={20} alt="" />
+            <Image className='tw-relative' src={'./img/shell_icon.png'} width={20} height={20} alt="" />
             <p>邀请记录</p>
-            <Image className='tw-relative' src={'/../public/img/shell_icon.png'} width={20} height={20} alt="" />
+            <Image className='tw-relative' src={'./img/shell_icon.png'} width={20} height={20} alt="" />
           </div>
 
         </div>
