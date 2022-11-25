@@ -220,7 +220,7 @@ export default function Rigister() {
 
             <div className=' tw-bg-gray-400/50 tw-rounded-lg'>
               <p className='tw-text-sm tw-text-white'>
-                每两位好友通过您的邀请并完成活动，您将获得一个盲盒
+                注册并成功充值 1 USDT/USDC 即可获得限量盲盒一个！
               </p>
             </div>
 
